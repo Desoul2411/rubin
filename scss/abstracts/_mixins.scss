@@ -1,0 +1,43 @@
+/*---------Text--------*/
+@mixin lato-600(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin lato-normal(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin lato-light(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin lato-bold(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin top-header-text(){
+  @include lato-600();
+  font-size: 11px;
+  line-height: 1.18;
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $grey-light;
+}
+
+
+
+@mixin basic-bg() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+

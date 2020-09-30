@@ -1,0 +1,68 @@
+.bestsellers {
+  &__content {
+    max-width: 1600px;
+    margin: 0 auto 15px;
+    background-color: #fff;
+    padding-top: 18px;
+  }
+
+  .section__title {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  &__desc {
+    @include lato-normal();
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    color: $main-color;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  &__item {
+    padding: 23px 20px 0;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    &:nth-child(1) .bestsellers__img{
+      background-image: url("../img/items/bestseller_01.png");
+    }
+    &:nth-child(2) .bestsellers__img{
+      background-image: url("../img/items/bestseller_02.png");
+    }
+    &:nth-child(3) .bestsellers__img{
+      background-image: url("../img/items/bestseller_03.png");
+    }
+    &:nth-child(4) .bestsellers__img{
+       background-image: url("../img/items/bestseller_04.png");
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+  }
+
+  &__img {
+    height: 411px;
+    width: 100%;
+    @include basic-bg();
+    margin-bottom: 23px;
+  }
+
+  &__name {
+    @include lato-600();
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 25px;
+  }
+}

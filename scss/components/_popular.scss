@@ -1,0 +1,66 @@
+.popular {
+  &__content{
+    max-width: 1600px;
+    margin: 0 auto 25px;
+    background-color: #fff;
+  }
+
+  .section__title{
+    padding: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 41px 65px 65px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  &__item{
+    flex-basis: auto;
+    width: 192px;
+  }
+
+  &__link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 346px;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+  &__img{
+    width: 192px;
+    height: 346px;
+    object-fit: cover;
+  }
+
+  &__fast-browse {
+    display: none;
+  }
+
+  &__price{
+    margin-bottom: 8px;
+    @include lato-600();
+    font-size: 16px;
+    line-height: 1.1875;
+    color: $main-color;
+  }
+
+  &__title {
+    @include lato-normal();
+    font-size: 13px;
+    line-height: 1.2;
+    color: $main-color;
+  }
+}

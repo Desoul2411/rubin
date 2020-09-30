@@ -1,0 +1,96 @@
+.header{
+  &__top{
+    background: #FFFFFF;
+    padding: 9px 0 10px;
+  }
+
+  &__top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: auto;
+    @include top-header-text();
+  }
+
+  &__title{
+    @include top-header-text();
+    display: inline-block;
+    margin-right: 74px;
+  }
+
+  &__delivery{
+    display: inline-block;
+    &:before{
+      content: '';
+      display: inline-block;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADySURBVHgBpVHLDYJAEN3lc+JCAUC2BEvACqQDtAOtgFCCFYgdSAdYAXQgCSHh6J2fbwyYDWII8SWTnc/OzJsZzhZgAoZheIqi7GC6kAxyres6qaoqpz/cHDAm5cCo27a9xxNAxEz9J+RUFEXELctKOeemFAwpMPipYEwJ0EXXdcTmDj3r+558PmyPsx8Ai8eEQaKq6qFt2wv0DU06BjTHcY7o8HGgw60sy2ymrts0jUB3dxpQiJbs0HWdrYVG87M/QeOkYPO1WLYCGu6/ZdKSpBOHKO7P7WAE4gmja7EFCCFMXMSDukPSGW+AxjEkQr/3Pl/wPmQFfxN0VQAAAABJRU5ErkJggg==');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 17px;
+      height: 10px;
+      margin-right: 5px;
+      margin-bottom: -1px;
+    }
+  }
+
+  .phone{
+    margin-right: 56px;
+    display: inline-block;
+    &:before{
+      content: '';
+      display: inline-block;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC5SURBVHgBdY+xDcIwEEXtHGlSJClTJJKZAMqUsAEboIzCBmwQWjqYIIxiKQsYywWNbb6RIllBPuns+7pn333eNI3I83xkjMl5ngeWiA2gCbcIous6loKzWHjv36kfMzSHCJQpkLTWsixLjjgg+6Io7sYY9QeGA/Crqqotyp6IToCfa5gvhRCids5NGL+HlMgLJuyg62CQx68CbK29ojyvJt8oVkqpD9Z4LDtHrZqzRLRtG8yNPyNExy9slkPSzByoFwAAAABJRU5ErkJggg==');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      margin-bottom: -1px;
+    }
+    &__link{
+      text-decoration: none;
+      color: $grey-light;
+    }
+
+  }
+
+  .socials{
+    display: inline-block;
+    &__item{
+      display: inline-block;
+      margin-right: 24px;
+    }
+
+    &__link{
+      text-decoration: none;
+      color: $grey-light;
+    }
+  }
+
+  &__bottom{
+    background-color: $dark-grey-bg;
+  }
+
+  &__bottom-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .logo{
+    margin: 7px 0 6px;
+    &__img{
+      width: 75px;
+      height: 62px;
+      object-fit: contain;
+    }
+  }
+
+
+
+}

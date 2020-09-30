@@ -1,0 +1,24 @@
+.main-menu{
+  width: 467px;
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link{
+    @include lato-normal();
+    font-size: 12px;
+    line-height: 467%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__sub-list{
+    display: none;
+  }
+}

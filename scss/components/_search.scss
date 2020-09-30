@@ -1,0 +1,33 @@
+.search{
+  position: relative;
+  align-self: center;
+
+  &__input{
+    width: 578px;
+    @include lato-normal();
+    font-size: 12px;
+    line-height: 233%;
+    color: $main-color;
+    padding: 0 30px 0 12px;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  ::placeholder {
+    color:  #808080;
+  }
+
+  &__btn{
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 8px;
+    display: block;
+    cursor: pointer;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFlSURBVHgBnVJNToNQEH7QNumqZdmkQN4N1BvQExh37rQn0BuUI9QTCCdQT2BvIEvdYYCEnYSw489v2kfzsARiv2QY3sybL2++GYVJ0HXdUhTlDr8WjMMSmAdzgyBwWAcUqXiDYlsUvdZ1/Q2vIXZNZDh7RVHcxHHsn7BQsWEYNfyWc679zSN3D/tB/kMDWsnFYsGp2DRNm/WA2uu6p04mkw28r6rqto8gDMMd2iB7aBGwg2A73/cTNgDo8QSnLZfLS5mAC8EGgXuJINJkAgpq7EyoNB4xqkGIHWFZlnlHAgRdeA51H/uKaVrsoJeTAE18lKapN5vNKHE7n8+/cP7sKsa03vcFo9FaJhjvP+PxuixLuvCCWTvwbyQYiQW7wD+9jnRK8jxv6aXIByyLLfrkUrhZbRe5ZyKqqmoVRZF3QiARWeJlVOw3O4I15+KlR5JOgj7IJGjnSmX/BD0HQq5o/NPplP0CtRmeECCWH38AAAAASUVORK5CYII=');
+  }
+
+}
